@@ -7,6 +7,8 @@ import MainHeader from './components/MainHeader/MainHeader';
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+
+    // just run in first time component mounted and dont use changed state as dependency
     useEffect(() => {
         const storedUserLoggedInInformation = localStorage.getItem('isLoggedIn');
         if (storedUserLoggedInInformation == '1') {

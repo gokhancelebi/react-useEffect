@@ -12,7 +12,7 @@ const Login = (props) => {
     const [passwordIsValid, setPasswordIsValid] = useState();
     const [formIsValid, setFormIsValid] = useState(false);
 
-    // form validation with useEffect
+    // form validation with useEffect with detecting when user stops typing
 
     useEffect(() => {
 
